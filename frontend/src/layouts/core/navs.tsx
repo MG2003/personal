@@ -2,46 +2,48 @@ import { LuGithub, LuLinkedin, LuFileText } from "react-icons/lu";
 import { NavLink, useLocation } from "react-router-dom";
 
 
-interface NavProp{
-    badUrl?: boolean
-}
-export function Nav({badUrl = false} : NavProp) {
+
+export function Nav() {
     return (
-      <div className = "font-inter text-4xl flex mb-12  w-full sticky top-0">
-        <NavLink className = " font-semibold italic" to = "/">max guo</NavLink>
-        <ul className = "ml-16">
-          <NavList title = "student" link = "about"/>
-          <NavList title = "developer" link = "projects"/>
-          <NavList title = "artist" link = "art"/>
-          <li className = {badUrl ? "": "hidden"}><span className = "font-semibold">*somewhere...</span></li>
-        </ul>
+      <div className = "font-inter text-3xl flex mb-12  w-full sticky top-0">
+        <NavLink to = "/" className = "outline-2 -outline-offset-1 outline rounded-full outline-white px-5 py-2">max guo</NavLink>
+        <NavList/>
       </div>
     )
   }
+
+
+function NavList(){
+  const r = "bg-[#ff2200]"
+  const b = "bg-[#0000ff]"
+  const p = "bg-[#ff00ff]"
+
+  const rest = "outline-2 outline -outline-offset-1 rounded-full outline-white px-5 py-2 transition-colors duration-300 "
+  return(
+
+    
+
+    <ul className = "ml-16 flex gap-x-4 items-center">
+      <li>
+        <NavLink className={({ isActive}) => isActive ? rest + r : rest + "hover:" + r } to = "about">        
+          student  
+        </NavLink>
+      </li>
+      <li>
+        <NavLink className={({ isActive}) => isActive ? rest + b : rest + "hover:" + b } to = "projects">        
+          developer 
+        </NavLink>
+      </li>          
+      <li >
+        <NavLink className={({ isActive}) => isActive ? rest + p : rest + "hover:" + p } to = "art">        
+          artist
+        </NavLink>
+      </li>
+    </ul>
+
+)
+}
   
-  interface NavListProps{
-    title: string,
-    link: string
-  }
-  
-  export function NavList({title, link}: NavListProps){
-    const currpath = useLocation().pathname == "/";
-    const basic_components = "hover:text-orange-500 bg-transparent";
-    return(
-      <li><NavLink className ={ ({ isActive}) =>
-        isActive ? "active" : currpath ? "": "hidden"}     
-        to = {link}>
-           {({ isActive }) =>           
-           (
-            <p className = {isActive ? "font-semibold " + basic_components: basic_components}>
-             { isActive ? "*" + title : title}
-            </p>
-          )
-          
-          }
-      </NavLink></li>
-    )
-  }
 
   export function Footer(){
     return(

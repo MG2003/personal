@@ -1,7 +1,7 @@
 function Projects(){
     return(
-        <div className = "m-auto my-4 outline outline-1 outline-white w-full h-full">
-
+        <div className = "m-auto my-4  w-full h-full">
+            coming soon
         </div>
     )
 }

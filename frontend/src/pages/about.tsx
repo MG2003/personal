@@ -1,14 +1,11 @@
 function About(){
 
     return(
-        <div className = "w-full h-full text-4xl grid grid-cols-2 px-24">
+        <div className = "w-full h-full">
             <div className = "h-full w-full">
-                <ul>
-                    <li>about</li>
-                    <li>status</li>
-                    <li>hobbies</li>
-
-                </ul>
+                <p className = "text-7xl leading-snug mr-36">
+                    hi! i'm max, a junior at brown university studying computer science.
+                </p>
             </div>
 
 
