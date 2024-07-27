@@ -5,7 +5,9 @@ import BadURL from '../pages/404';
 
 import About from '../pages/about';
 import Art from '../pages/art';
-import Projects from '../pages/cs';
+import Cs from '../pages/cs';
+
+import ArtGrid from '../layouts/portfolio/art_pf';
 
 import { createBrowserRouter } from 'react-router-dom';
 
@@ -28,8 +30,12 @@ export const router = createBrowserRouter([
             element: <Art/>
           },
           {
-            path: "/projects",
-            element: <Projects/>
+            path: "/cs",
+            element: <Cs/>
+          },
+          {
+            path: "/layout",
+            element: <ArtGrid/>
           }
 
         ]

@@ -1,14 +1,17 @@
 import { Outlet } from "react-router-dom";
 
-import { Nav, Footer } from "../layouts/core/navs";
+import { AltNav} from "../layouts/core/navs";
 
+import { useLocation } from 'react-router-dom';
 
 function Root(){
+
+    const path = useLocation().pathname
+    console.log(path == "/art")
     return(
-      <div className =  "p-12 flex-col flex justify-between min-h-screen">
-        <Nav/>
-        <Outlet />
-        <Footer/>
+      <div className = "root-layout">
+        <AltNav/>
+        <Outlet/>
       </div>
         
     )
