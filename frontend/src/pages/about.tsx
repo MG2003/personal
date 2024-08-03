@@ -5,16 +5,16 @@ function About(){
 
     return(
         
-            <div className = "px-20 mx-auto py-6">
-                <div className = "px-20">        
-                    <div className = "grid grid-cols-5 py-6 mb-1 gap-10">
-                        <div className = "col-span-2">
-                            <img src="assets/img/webpage.jpg" className = "rounded-xl"></img>
+            <div className = "px-20 mx-auto md:py-6">
+                <div className = "md:px-20">        
+                    <div className = "md:grid md:grid-cols-5 inline-block py-6 mb-1 gap-10">
+                        <div className = "col-span-2 overflow-hidden mb-6 md:mb-0">
+                            <img src="assets/img/webpage.jpg" className = "rounded-xl md:min-w-[300px]"></img>
                             <p className = "text-md font-jmono w-fit m-auto">aquarium :D</p>
                         </div>
                         <div className = "text-lg font-jmono col-span-3">      
-                            <div className = "text-5xl font-inter font-black overflow-hidden">about me</div>
-                            <div className = "py-6">
+                            <div className = "md:text-5xl text-3xl font-inter font-black overflow-hidden">about me</div>
+                            <div className = "md:text-lg text-md py-6">
                                 hi! i'm max. i'm a junior at brown university, 
                                 studying <span className = "font-extrabold">computer science and math</span>. i'm passionate about finding a creative outlet for myself
                                 with technology, which currently manifests through my work in game development and computer graphics.
@@ -31,8 +31,8 @@ function About(){
                             </div>
                     </div>
 
-                    <div className = "text-5xl font-inter font-black">currently</div>
-                        <div className = "py-6 bg-transparent font-jmono text-lg flex-col gap-2 flex">
+                    <div className = "md:text-5xl text-3xl font-inter font-black">currently</div>
+                        <div className = "py-6 bg-transparent font-jmono md:text-lg text-md flex-col gap-2 flex">
                             <p>
                                 <span className = "text-2xl">💻 </span> 
                                 interning at <span className = "font-extrabold">anytime ai</span>, a startup building AI tools for lawyers and law students
