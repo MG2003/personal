@@ -5,7 +5,13 @@ export default {
     
     extend: {
       fontFamily: {
-        inter: 'Inter, sans serif'
+        inter: 'Inter, sans serif',
+        space_mono: "Space mono, monospace",
+        jmono: "Jetbrains mono, monospace"
+      },
+      colors: {
+        primary: '#f7f0e1',  
+        secondary: '#ff4e45'
       }
     },
   },

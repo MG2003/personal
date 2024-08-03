@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-import { AltNav} from "../layouts/core/navs";
+import { AltNav, Footer} from "../layouts/core/navs";
 
 import { useLocation } from 'react-router-dom';
 
@@ -11,7 +11,11 @@ function Root(){
     return(
       <div className = "root-layout">
         <AltNav/>
-        <Outlet/>
+        <div className = "m-auto">
+            <Outlet/>
+         </div>
+         <Footer/>
+
       </div>
         
     )

@@ -5,7 +5,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 export function Nav() {
     return (
-      <div className = "font-inter text-3xl flex mb-12  w-full z-50 bg-transparent fixed justify-between">
+      <div className = "font-inter text-3xl flex mb-12  w-full z-50 bg-transparent justify-between">
         <div>
           <NavLink to = "/" className = "outline-2 -outline-offset-1 outline rounded-full outline-white px-5 py-2">max guo</NavLink>
           <NavList/>
@@ -19,20 +19,19 @@ export function Nav() {
 
 function NavList(){
   return(
-    <ul className = "flex gap-x-4 bg-transparent">
+    <ul className = "flex gap-x-4 bg-transparent h-fit  mt-auto font-jmono font-light">
       <li className = "bg-transparent">
-        <NavLink className={({ isActive}) => isActive ? "nav-btn"     
-        : "nav-btn" } to = "about" end>        
+        <NavLink className="nav-btn" to = "about" end>        
           about
         </NavLink>
       </li>
       <li className = "bg-transparent">
-        <NavLink className={({ isActive}) => isActive ? "nav-btn":"nav-btn" } to = "cs">        
+        <NavLink className="nav-btn" to = "cs">        
           programming
         </NavLink>
       </li>          
       <li className = "bg-transparent">
-        <NavLink className={({ isActive}) => isActive ? "nav-btn":"nav-btn" } to = "art">        
+        <NavLink className="nav-btn" to = "art">        
           art
         </NavLink>
       </li>
@@ -44,11 +43,14 @@ function NavList(){
 
   export function Footer(){
     return(
-      <footer className = "flex w-full justify-end text-l mt-12">
-        <a href = "https://github.com/MG2003" target="_blank" className = "m-4">github</a>
-        <a href = "https://www.linkedin.com/in/mg2003/" target="_blank" className = "m-4">linkedin</a>
-        <a href = "src/assets/mg_resume.pdf" target="_blank" className = "m-4">resume</a>
-      </footer>
+      <footer className = "p-12 bg-secondary text-primary">
+                    <ul className = "bg-inherit text-inherit">
+                        <li>github</li>
+                        <li>resume</li>
+                        <li>linkedin</li>
+
+                    </ul>
+                </footer>
     )
   }
 
@@ -56,8 +58,8 @@ function NavList(){
 export function AltNav(){
   return (
 
-      <div className = "flex justify-between text-xl p-1 sticky top-0 font-inter">
-        <NavLink to = "/">mg</NavLink>
+      <div className = "flex justify-between text-xl font-inter w-full backdrop-blur-md bg-transparent px-12 py-6">
+        <NavLink to = "/" className = "text-4xl font-black bg-inherit font-inter">mg</NavLink>
         <NavList/>
       </div>
 
