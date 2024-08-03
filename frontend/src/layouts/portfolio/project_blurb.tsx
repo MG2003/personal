@@ -1,11 +1,3 @@
-interface ProjectItem{
-    img: string;
-    title: string;
-    subtitle: string;
-    text: string;
-    link: string;
-}
-
 export default function Project(){
     return(
         <div className = "px-12">

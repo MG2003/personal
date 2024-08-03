@@ -1,5 +1,4 @@
-import { LuGithub, LuLinkedin, LuFileText } from "react-icons/lu";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 

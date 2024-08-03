@@ -1,5 +1,3 @@
-import { AltNav } from "../layouts/core/navs";
-
 function Cs(){
     return(
 

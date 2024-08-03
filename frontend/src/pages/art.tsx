@@ -1,7 +1,3 @@
-
-import { AltNav } from "../layouts/core/navs";
-
-
 function Art(){
     return(
         <div className = "root-layout">

@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { Nav, Footer } from "../layouts/core/navs";
 
 function BadURL(){
     const fof = []

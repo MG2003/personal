@@ -1,5 +1,3 @@
-import { AltNav } from "../layouts/core/navs";
-import Marquee from "react-fast-marquee";
 function Home(){
     return(
             <div>
