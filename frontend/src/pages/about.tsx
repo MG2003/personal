@@ -8,7 +8,10 @@ function About(){
             <div className = "px-20 mx-auto py-6">
                 <div className = "px-20">        
                     <div className = "grid grid-cols-5 py-6 mb-1 gap-10">
-                        <img src="assets/img/webpage.jpg" className = "col-span-2 rounded-xl"></img>
+                        <div className = "col-span-2">
+                            <img src="assets/img/webpage.jpg" className = "rounded-xl"></img>
+                            <p className = "text-md font-jmono w-fit m-auto">aquarium :D</p>
+                        </div>
                         <div className = "text-lg font-jmono col-span-3">      
                             <div className = "text-5xl font-inter font-black overflow-hidden">about me</div>
                             <div className = "py-6">
