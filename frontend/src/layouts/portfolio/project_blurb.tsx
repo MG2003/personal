@@ -17,7 +17,6 @@ function Project(){
 
     let { id } = useParams<"id">();
 
-    let project = getProjectById(Number(id));
 
     return(
         <div className = "px-12">
