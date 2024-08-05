@@ -1,5 +1,4 @@
 import { useParams, NavLink } from "react-router-dom"
-import { getProjectById } from "../../utils/consts";
 
 
 function Gallery(){
