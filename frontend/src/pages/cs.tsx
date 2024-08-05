@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Tags, PROJECTS } from "../utils/consts";
+import { Tags } from "../utils/consts";
 
 import { Outlet } from "react-router-dom";
 
