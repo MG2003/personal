@@ -7,6 +7,10 @@ import About from '../pages/about';
 import Boba from '../pages/boba';
 import Art from '../pages/art';
 import Cs from '../pages/cs';
+import Experience from '../pages/experience';
+import { Project, Gallery } from '../layouts/portfolio/project_blurb';
+
+import { PROJECTS } from './consts';
 
 import ArtGrid from '../layouts/portfolio/art_pf';
 
@@ -42,7 +46,16 @@ export const router = createBrowserRouter([
           },
           {
             path: "/cs",
-            element: <Cs/>
+            element: <Cs/>,
+            children: [
+              {
+                index:true,
+                element: <Gallery/>
+              },
+              {path: "/cs/:id",
+              element: <Project/>}
+            ]
+            
           },
           {
             path: "/layout",

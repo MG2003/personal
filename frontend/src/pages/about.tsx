@@ -30,16 +30,21 @@ function About(){
 
                             </div>
                     </div>
-
-                    <div className = "md:text-5xl text-3xl font-inter font-black">currently</div>
+                    <div className = "grid grid-cols-2 mb-6">
+                    <div>
+                    <div className = "md:text-5xl text-3xl font-inter font-black">present</div>
                         <div className = "py-6 bg-transparent font-jmono md:text-lg text-md flex-col gap-2 flex">
                             <p>
                                 <span className = "text-2xl">💻 </span> 
-                                interning at <span className = "font-extrabold">anytime ai</span>, a startup building AI tools for lawyers and law students
+                                interning at <a className = "font-extrabold hover:underline decoration-2" href = "https://www.anytimeai.ai/" target = "_blank">anytime ai</a>
                                 </p>
                             <p>
                                 <span className = "text-2xl">📏 </span> 
-                                preparing to ta <span className = "font-extrabold">csci1260: compilers and program analysis</span>
+                                preparing to ta <span className = "font-extrabold">compilers and program analysis</span>
+                            </p>
+                            <p>
+                                <span className = "text-2xl">🎮 </span> 
+                                organizing <a className = "font-extrabold hover:underline decoration-2" href = "https://brownrisdgames.itch.io/" target = "_blank">brown risd game developers</a>
                             </p>
                             <p>
                                 <span className = "text-2xl">📦 </span> 
@@ -56,17 +61,37 @@ function About(){
                                 working out at <span className = "font-extrabold">the local gym</span>
                             </p>
                             <p>
-                                <span className = "text-2xl">🎮 </span> 
+                                <span className = "text-2xl">🦀 </span> 
                                 making my way through <span className = "font-extrabold">
                                     another crab's treasure
                                 </span>
                              </p>
                         </div>
-                </div>     
-
-           
-
-             
+                        </div>
+                        <div>
+                            <div className = "md:text-5xl text-3xl font-inter font-black">past</div>
+                            <div className = "py-6 bg-transparent font-jmono md:text-lg text-md flex-col gap-2 flex">
+                                    <p>
+                                        <span className = "text-2xl">💻 </span> 
+                                        interned at <a className = "font-extrabold hover:underline decoration-2" href = "https://www.icims.com/" target = "_blank">iCIMS</a>
+                                    </p>
+                                    <p> <span className = "text-2xl">📐 </span> 
+                                ta'd <span className = "font-extrabold">abstract algebra</span>
+                                    </p>
+                                    <p><span className = "text-2xl">🛠️ </span> built stuff with <a className = "font-extrabold  hover:underline decoration-2" href = "https://www.linkedin.com/company/full-stack-at-brown/" target = "_blank">full stack at brown</a></p>
+                                    <p>
+                                        <span className = "text-2xl">🦀 </span>
+                                        spent a summer learning <span className = "font-extrabold">rust</span>
+                                    </p>
+                                    <p className = "font-extrabold">
+                                        ... and a lot more :D
+                                    </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+         
             </div>
 
            

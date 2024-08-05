@@ -21,7 +21,7 @@ export interface BlurbInfo{
                 </ul>
     */
 
-export const BlurbItems:   BlurbInfo[] = [
+const BLURBITEMS:   BlurbInfo[] = [
     {
         company: "ten one",
         location: "providence",
@@ -42,3 +42,49 @@ export const BlurbItems:   BlurbInfo[] = [
     },
 
 ]
+
+
+interface projectInfo{
+    id: number,
+    title: string,
+    thumb: string,
+    imgs: string[],
+    tags: string[],
+    blurb: string
+}
+
+interface tag{
+    id: number,
+    t: string
+}
+
+const Tags: tag[] = [
+    
+    {id: 0, t: "hi"},
+    {id: 1, t: "bye"} , 
+    {id: 2, t: "lie"}
+
+
+]
+
+
+const PROJECTS: projectInfo[] = [
+    {
+        id: 1,
+        title: "kebash!",
+        thumb: "assets/project_img/kebash_thumbnail.png",
+        imgs: [],
+        tags: ["game dev", "C#", "Unity"],
+        blurb: "my first game with the brown risd game developers! kebash! is a chaotic party game where up to 4 players can play as small, animated kebab sticks that run around shooting their food at others. i implemented some pretty key features, such as the ui for each kebab stick's stamina meter, a la breath of the wild, as well as a game manager to manage all the different menus and scenes the player navigates through."
+
+    }
+]
+
+function getProjectById(id: number) {
+    return PROJECTS.find((image) => image.id === id);
+  }
+
+
+export{
+    BLURBITEMS, Tags, PROJECTS, getProjectById
+};

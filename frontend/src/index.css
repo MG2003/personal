@@ -20,5 +20,11 @@ html {
     @apply min-h-screen h-fit  -z-50
   }
 
+  .tag {
+   @apply py-1 px-4 outline outline-secondary outline-2 w-fit rounded-md transition-colors duration-300 font-jmono font-extrabold
+  }
+
+
+
 
 }

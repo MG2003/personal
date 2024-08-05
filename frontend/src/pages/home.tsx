@@ -1,7 +1,7 @@
 function Home(){
     return(
             <div>
-                <div className = " grid-cols-2 grid px-20 mt-6 mb-12">
+                <div className = " grid-cols-2 grid px-20 mt-12 mb-12">
                     <div className = "text-5xl font-jmono font-black">
                         <p>hi! welcome to my little corner of the internet.
                         <br/><br/>

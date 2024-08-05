@@ -1,5 +1,5 @@
 import Marquee from "react-fast-marquee"
-import { BlurbItems, BlurbInfo } from "../utils/consts"
+import { BLURBITEMS, BlurbInfo } from "../utils/consts"
 
 
 export default function Boba(){
@@ -20,7 +20,7 @@ export default function Boba(){
 
             <div className = "grid grid-cols-1 px-20 py-12 w-fit m-auto gap-4">
                 {
-                    BlurbItems.map((blrb: BlurbInfo) =>
+                    BLURBITEMS.map((blrb) =>
                         <BobaBlurb company = {blrb.company} order = {blrb.order} location = {blrb.location} review = {blrb.review}/>
                 )
                 }
