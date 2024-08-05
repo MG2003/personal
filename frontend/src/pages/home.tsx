@@ -11,8 +11,8 @@ function Home(){
                     <div></div>
                 </div>
                 <div className = "min-h-screen  mt-20 py-6 px-12">
-                    <div className = "text-8xl font-inter font-black overflow-hidden mb-12">
-                        featured work
+                    <div className = "text-8xl font-jmono font-black overflow-hidden mb-12">
+                        FEATURED WORK
                     </div>
 
                     <div className = "font-jmono text-2xl font-extrabold">under construction!</div>

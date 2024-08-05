@@ -7,9 +7,8 @@ import About from '../pages/about';
 import Boba from '../pages/boba';
 import Art from '../pages/art';
 import Cs from '../pages/cs';
+import Blog from '../pages/blog';
 import { Project, Gallery } from '../layouts/portfolio/project_blurb';
-
-import ArtGrid from '../layouts/portfolio/art_pf';
 
 import { createBrowserRouter, Outlet } from 'react-router-dom';
 
@@ -55,8 +54,15 @@ export const router = createBrowserRouter([
             
           },
           {
-            path: "/layout",
-            element: <ArtGrid/>
+            path: "/blog",
+            element: <Blog/>,
+            children: [
+              {
+                path: "blog/:id",
+                element: <Blog/>
+              }
+            ]
+
           }
 
         ]

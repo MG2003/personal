@@ -18,7 +18,7 @@ export function Nav() {
 
 function NavList(){
   return(
-    <ul className = "flex gap-x-4 bg-transparent h-fit  mt-auto font-jmono font-light">
+    <ul className = "flex gap-x-4 bg-transparent h-fit  mt-auto font-inter font-light">
       <li className = "bg-transparent">
         <NavLink className="nav-btn" to = "about" end>        
           about
@@ -32,6 +32,11 @@ function NavList(){
       <li className = "bg-transparent">
         <NavLink className="nav-btn" to = "art">        
           art
+        </NavLink>
+      </li>
+      <li className = "bg-transparent">
+        <NavLink className="nav-btn" to = "blog">        
+          blog
         </NavLink>
       </li>
     </ul>
